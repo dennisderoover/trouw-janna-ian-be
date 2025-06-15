@@ -118,7 +118,7 @@ async function readSheet() {
     const infoObjectFromSheet = await sheetInstance.spreadsheets.values.get({
         auth: googleAuth,
         spreadsheetId: googleSheetId,
-        range: `${googleSheetPage}!A1:J101`
+        range: `${googleSheetPage}!A1:J132`
     });
     
     console.log(readSuccessMessage);
