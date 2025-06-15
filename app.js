@@ -141,7 +141,7 @@ async function writeToSheet(sheetValues, attendances) {
     await sheetInstance.spreadsheets.values.update({
       auth: googleAuth,
       spreadsheetId: googleSheetId,
-      range: `${googleSheetPage}!A1:K101`,
+      range: `${googleSheetPage}!A1:K132`,
       valueInputOption: 'USER_ENTERED',
       resource: {
         values: sheetValues.map((r) => 
