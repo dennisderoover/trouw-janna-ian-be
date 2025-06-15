@@ -118,7 +118,7 @@ async function readSheet() {
     const infoObjectFromSheet = await sheetInstance.spreadsheets.values.get({
         auth: googleAuth,
         spreadsheetId: googleSheetId,
-        range: `${googleSheetPage}!A1:J132`
+        range: `${googleSheetPage}!A1:J137`
     });
     
     console.log(readSuccessMessage);
@@ -141,7 +141,7 @@ async function writeToSheet(sheetValues, attendances) {
     await sheetInstance.spreadsheets.values.update({
       auth: googleAuth,
       spreadsheetId: googleSheetId,
-      range: `${googleSheetPage}!A1:K132`,
+      range: `${googleSheetPage}!A1:K137`,
       valueInputOption: 'USER_ENTERED',
       resource: {
         values: sheetValues.map((r) => 
